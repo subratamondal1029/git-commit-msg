@@ -1,0 +1,32 @@
+{
+  "name": "git_commit_msg",
+  "version": "1.0.0",
+  "description": "A simple tool for generating git commit messages with AI",
+  "main": "src/index.ts",
+  "type": "module",
+  "bin": {
+    "git-commit-msg": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json && tsc-alias -p tsconfig.json --resolve-full-paths --resolve-full-extension .js",
+    "dev": "tsc -w & tsc-alias -w -p tsconfig.json --resolve-full-paths --resolve-full-extension .js",
+    "start": "dist/index.js"
+  },
+  "keywords": [],
+  "author": "Subrata Mondal",
+  "license": "ISC",
+  "packageManager": "pnpm@10.33.0",
+  "devDependencies": {
+    "@types/node": "^25.5.0",
+    "@types/signale": "^1.4.7",
+    "tsc-alias": "^1.8.16",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.2"
+  },
+  "dependencies": {
+    "@google/genai": "^1.47.0",
+    "dotenv": "^17.3.1",
+    "execa": "^9.6.1",
+    "signale": "^1.4.0"
+  }
+}
