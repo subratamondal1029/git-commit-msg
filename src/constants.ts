@@ -6,7 +6,7 @@ export const SUPPORTED_TOOLS = ["git"] as const;
 export const SYSTEM_INSTRUCTION = `You are a git commit message generator.
 Output a single line conventional commit message.
 Format: type(scope): description
-Rules: max 72 chars, no body, no explanation, no quotes, no markdown.` as const;
+Rules: max 72 chars, lower-case, no body, no explanation, no quotes, no markdown.` as const;
 
 export const MODEL_CONFIG: Omit<GenerateContentParameters, "contents"> = {
   model: "gemini-2.5-flash",
