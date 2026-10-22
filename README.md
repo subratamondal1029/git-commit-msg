@@ -48,7 +48,7 @@ pnpm build
 pnpm add -g .
 ```
 
-> If `pnpm link` fails, run `pnpm setup` first, restart your terminal, then try again.
+> If `pnpm add` fails, run `pnpm setup` first, restart your terminal, then try again.
 
 ---
 
