@@ -45,7 +45,7 @@ GEMINI_API_KEY=your_api_key_here
 ```bash
 pnpm i
 pnpm build
-pnpm link --global
+pnpm add -g .
 ```
 
 > If `pnpm link` fails, run `pnpm setup` first, restart your terminal, then try again.
@@ -81,7 +81,3 @@ git commit-ai
 Unlike editor-based tools, `git-commit-msg` runs in the terminal — completely outside the editor. Husky pre-commit hooks run their checks normally. No conflicts.
 
 ---
-
-## License
-
-MIT — [Subrata Mondal](https://subratamondal.vercel.app)
